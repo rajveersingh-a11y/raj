@@ -1,0 +1,5 @@
+node_modules/
+hrms.db
+hrms.db-journal
+.env
+*.log
