@@ -1,12 +1,13 @@
 # HRMS Lite - Full-Stack Human Resource Management System
 
-A lightweight, production-ready Human Resource Management System built with React frontend and Node.js/Express backend. This application demonstrates end-to-end full-stack development with clean architecture, proper validation, error handling, and a professional UI.
+A lightweight, production-ready Human Resource Management System built with React frontend and Node.js/Express backend with Neon PostgreSQL database. This application demonstrates end-to-end full-stack development with clean architecture, proper validation, error handling, and a professional UI.
 
 ## Features
 
 ### Employee Management
 - ✅ Add new employees with unique Employee ID, Full Name, Email, and Department
 - ✅ View list of all employees in a clean table format
+- ✅ Edit employee details (Name, Email, Department) inline
 - ✅ Delete employees with confirmation
 - ✅ Server-side validation for required fields and email format
 - ✅ Duplicate Employee ID prevention
@@ -14,6 +15,8 @@ A lightweight, production-ready Human Resource Management System built with Reac
 ### Attendance Management
 - ✅ Mark attendance for employees (Present/Absent)
 - ✅ View attendance records per employee
+- ✅ Edit attendance status inline
+- ✅ Delete attendance records
 - ✅ Date-based attendance tracking
 - ✅ Prevent duplicate attendance entries for the same date
 - ✅ Professional status badges (Green for Present, Red for Absent)
@@ -37,8 +40,12 @@ A lightweight, production-ready Human Resource Management System built with Reac
 ### Backend
 - **Node.js** - Runtime environment
 - **Express.js** - Web framework
-- **SQLite** - Database (no external setup required)
-- **express-validator** - Request validation
+- **Neon PostgreSQL** - Cloud database
+- **pg** - PostgreSQL client for Node.js
+
+## Database
+
+This project uses **Neon PostgreSQL** - a serverless PostgreSQL database. The connection string is configured in `backend/database.js`.
 
 ## Project Structure
 
@@ -295,3 +302,7 @@ Built as a full-stack development demonstration project.
 ---
 
 **Note:** This is a lightweight HRMS system designed for demonstration. For production use, consider adding authentication, authorization, data encryption, and additional security measures.
+
+## Repository
+
+This project is hosted on GitHub: [https://github.com/rajveersingh-a11y/raj.git](https://github.com/rajveersingh-a11y/raj.git)
